@@ -1,0 +1,77 @@
+
+dn: ou=people,dc=idptestbed
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=groups,dc=idptestbed
+objectClass: organizationalUnit
+ou: Groups
+
+
+
+dn: cn=ServiceManagers,ou=groups,dc=idptestbed
+objectClass: groupOfNames
+objectClass: top
+ou: groups
+description: People who are Shared Service Managers
+member: uid=simon, ou=People, dc=idptestbed
+cn: ServiceManagers
+
+dn: cn=DevManagers,ou=groups,dc=idptestbed
+objectClass: groupOfNames
+objectClass: top
+ou: groups
+description: People who are Dev Managers
+member: uid=penny, ou=People, dc=idptestbed
+cn: DevManagers
+
+dn: cn=Developers,ou=groups,dc=idptestbed
+objectClass: groupOfNames
+objectClass: top
+ou: groups
+description: People who are developers
+member: uid=ada, ou=People, dc=idptestbed
+member: uid=simon, ou=People, dc=idptestbed
+member: uid=penny, ou=People, dc=idptestbed
+cn: Developers
+
+
+
+dn: uid=simon,ou=People,dc=idptestbed
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+givenName: Simon
+uid: simon
+sn: Smith
+cn: Simon Smith
+mail: simon@example.org
+userPassword: password
+memberOf: cn=ServiceManagers,ou=groups,dc=idptestbed
+
+dn: uid=penny,ou=People,dc=idptestbed
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+givenName: Penny
+uid: penny
+sn: Parson
+cn: Penny Parson
+mail: penny@example.org
+userPassword: password
+memberOf: cn=DevManagers,ou=groups,dc=idptestbed
+
+dn: uid=ada,ou=People,dc=idptestbed
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+givenName: Ada
+uid: ada
+sn: Alvarez
+cn: Ada Alvarez
+mail: ada@example.com
+memberOf: cn=Developers,ou=groups,dc=idptestbed
+userPassword: password
