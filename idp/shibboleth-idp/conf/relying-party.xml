@@ -51,7 +51,7 @@
     <!-- Container for any overrides you want to add. -->
 
     <util:list id="shibboleth.RelyingPartyOverrides">
-        <bean parent="RelyingPartyByName" c:relyingPartyIds="http://cato1027-Elb-1TETW1H8WLIPQ-1231250788.us-east-1.elb.amazonaws.com.elb.cloudbees.net/cjoc/securityRealm/finishLogin">
+        <bean parent="RelyingPartyByName" c:relyingPartyIds="https://dev.snoopdave.net/cjoc/securityRealm/finishLogin">
             <property name="profileConfigurations">
                 <list>
                     <bean parent="Shibboleth.SSO" p:postAuthenticationFlows="attribute-release" />
