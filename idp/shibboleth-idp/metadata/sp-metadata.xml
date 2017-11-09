@@ -1,78 +1,73 @@
-
-<!--
-This is example metadata only. Do *NOT* supply it as is without review,
-and do *NOT* provide it in real time to your partners.
- -->
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_bf63813d70b5f63a1d2a3504dca89b5e268be651" entityID="https://sp.idptestbed/shibboleth">
-
-  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
-    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
-    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
-    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
-  </md:Extensions>
-
-  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
-    <md:Extensions>
-      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://idptestbed/Shibboleth.sso/Login"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor ID="_biufponhkk8jbykifxgpwsacqf1nr3kme3ksejf"
+                     entityID="http://cato1027-Elb-1TETW1H8WLIPQ-1231250788.us-east-1.elb.amazonaws.com.elb.cloudbees.net/cjoc/securityRealm/finishLogin"
+                     validUntil="2037-10-30T11:49:32.845Z" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+    <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+        <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
     </md:Extensions>
-    <md:KeyDescriptor>
-      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-        <ds:KeyName>79943fee7865</ds:KeyName>
-        <ds:X509Data>
-          <ds:X509SubjectName>CN=79943fee7865</ds:X509SubjectName>
-          <ds:X509Certificate>MIIC6zCCAdOgAwIBAgIJAOy0nki3WAOVMA0GCSqGSIb3DQEBBQUAMBcxFTATBgNV
-BAMTDDc5OTQzZmVlNzg2NTAeFw0xNTEyMTEwMzAwNDJaFw0yNTEyMDgwMzAwNDJa
-MBcxFTATBgNVBAMTDDc5OTQzZmVlNzg2NTCCASIwDQYJKoZIhvcNAQEBBQADggEP
-ADCCAQoCggEBALPBzAz0DTn+j2YsQKfqWI+m08lP5UzwVsE9ZKzLqO3PRHZqiOBm
-EaFmRrYCZCAOcJ0TXcxPGtNSo8HC4uw5/Y5lJGuI3jN7X7KB1VUQDpUSwfgOqtro
-uDoVRKrsaYZTnlNV8KbZ0WQz5s4Uw6CxKRB9RZ5iQMP1fuxc8B6GSOb3x69MiY6c
-1jlgVAc6rV4zGfpafacxOLM8qcYhY8u3TiSd0H+oiGEqi1mFLK8yp6FKzX8OUkQf
-We49YHz6wBxFOe+/p+7ziym1rBs/lGfenEo8ziCIMmjnoo257fz00bcz9rFl1rTx
-KLFfgy72xTlG72l6u+pB9VqK3YNJS52Ns5UCAwEAAaM6MDgwFwYDVR0RBBAwDoIM
-Nzk5NDNmZWU3ODY1MB0GA1UdDgQWBBRiDMNPjiAMC50WWubI3PMjP45S/DANBgkq
-hkiG9w0BAQUFAAOCAQEAYZM/iWgC93vAq0d98egEzvESKodxHffkDOagd4Kxt/S0
-AAHsVQCmAK/9kmRhsWzR3f1KIw98q4EX7nH/K68BFrerUvaL5+fEGE9W6Ki6QdW8
-bM17GQkLyRDKZzGPm/hsaG1Oxru2kDf7qSvv59aRZlZ8skrDEnx8+dZ8JKC02ZDU
-ClC+xWl1UPfO2BL4tJei/siSymGpiRqznQ2JMoTFu5CUUpoxyCVz1bl9lCVceoJ9
-FaL38knS0p5DnXcm+I8wqNEVGLDPbDalBQryhJT9fIMm1/B85gB3AWAvcu9PPfHK
-lQQUhxyEXTBJx3luLlpIjoloFKIute9K7pE5qAENjg==
-</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
-      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
-    </md:KeyDescriptor>
-    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idptestbed/Shibboleth.sso/Artifact/SOAP" index="1"/>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idptestbed/Shibboleth.sso/SLO/SOAP"/>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idptestbed/Shibboleth.sso/SLO/Redirect"/>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idptestbed/Shibboleth.sso/SLO/POST"/>
-    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://idptestbed/Shibboleth.sso/SLO/Artifact"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idptestbed/Shibboleth.sso/SAML2/POST" index="1"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idptestbed/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://idptestbed/Shibboleth.sso/SAML2/Artifact" index="3"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://idptestbed/Shibboleth.sso/SAML2/ECP" index="4"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://idptestbed/Shibboleth.sso/SAML/POST" index="5"/>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://idptestbed/Shibboleth.sso/SAML/Artifact" index="6"/>
-  </md:SPSSODescriptor>
-
+    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true"
+                        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+        <md:Extensions xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init">
+            <init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+                                   Location="http://cato1027-Elb-1TETW1H8WLIPQ-1231250788.us-east-1.elb.amazonaws.com.elb.cloudbees.net/cjoc/securityRealm/finishLogin"/>
+        </md:Extensions>
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC+TCCAeGgAwIBAgIUHkqBHFh+4mx50W1v1BeFMKSI4V4wDQYJKoZIhvcNAQELBQAwFzEVMBMG
+                        A1UEAwwMU0FNTC1qZW5raW5zMB4XDTE3MTAyNzIyMTYxOVoXDTE4MTAyNzIyMTYxOVowFzEVMBMG
+                        A1UEAwwMU0FNTC1qZW5raW5zMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6EVFE8Fd
+                        Ls4b4Acq3vhbK8zP/gdFQKNI8eCqXwNXIY4Ycyima3BGxbqBY/196B4b4oKLVtaKWzQaK2CaWiaD
+                        897smPfQ6j5pubQUUwKL2KpvSmaTFxfPf/7jfACCb7HipGJpvAvTkIDuiL/48f9LaDuevhAXtk+v
+                        30NOEVmSBxm78kexh6EyavGlAND8mKyEXLvTt90HfaY/vANmppPyvJnBKJhF3IG1bnvR666U2lzC
+                        HJh8SeCbUJP9/SAaNmyQkBWXtXFIe9xyAf+zgC2rU/GFfL+SddTP/LnWHnKrzAJQrxTaRN1VcfdN
+                        KYCyDD6bewkZbiYzePS/9rwwQcLZZQIDAQABoz0wOzAdBgNVHQ4EFgQUCH9NABHqIA8rwU7tI9Hj
+                        5iTUpf4wGgYDVR0RBBMwEYIPY249U0FNTC1qZW5raW5zMA0GCSqGSIb3DQEBCwUAA4IBAQBbJD8o
+                        PwVS8/9xVxwSkwNakSi4qK4qS3JQfcwyX3nemVITLvpuNl80CWDS6D8xS41syv964aJV1cx3Me48
+                        rxT8IX8ppW9/WLUUgZ6Waa0ry4TcJ4pGK4WNnWtnDEezjvMxS0pgbXdLoKvWNed1PkIltjgW5RJ6
+                        tWvzi8z5eruGmRon9Xoy4xI3mK9HJaqELGoLi7UeglYumyWNquDAgf/WjXU7eIYru9PV9XYc4Sv6
+                        zokYspdmoYo20hBYnVPffpYSXqsn8He6eQQ3C1Lh1ljeqU7rRKyy1GRUmiGFBKrUprjD8GhvQxaP
+                        z5FaEKbokJa43BF1H7pkgSo+DYrDntiN
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC+TCCAeGgAwIBAgIUHkqBHFh+4mx50W1v1BeFMKSI4V4wDQYJKoZIhvcNAQELBQAwFzEVMBMG
+                        A1UEAwwMU0FNTC1qZW5raW5zMB4XDTE3MTAyNzIyMTYxOVoXDTE4MTAyNzIyMTYxOVowFzEVMBMG
+                        A1UEAwwMU0FNTC1qZW5raW5zMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6EVFE8Fd
+                        Ls4b4Acq3vhbK8zP/gdFQKNI8eCqXwNXIY4Ycyima3BGxbqBY/196B4b4oKLVtaKWzQaK2CaWiaD
+                        897smPfQ6j5pubQUUwKL2KpvSmaTFxfPf/7jfACCb7HipGJpvAvTkIDuiL/48f9LaDuevhAXtk+v
+                        30NOEVmSBxm78kexh6EyavGlAND8mKyEXLvTt90HfaY/vANmppPyvJnBKJhF3IG1bnvR666U2lzC
+                        HJh8SeCbUJP9/SAaNmyQkBWXtXFIe9xyAf+zgC2rU/GFfL+SddTP/LnWHnKrzAJQrxTaRN1VcfdN
+                        KYCyDD6bewkZbiYzePS/9rwwQcLZZQIDAQABoz0wOzAdBgNVHQ4EFgQUCH9NABHqIA8rwU7tI9Hj
+                        5iTUpf4wGgYDVR0RBBMwEYIPY249U0FNTC1qZW5raW5zMA0GCSqGSIb3DQEBCwUAA4IBAQBbJD8o
+                        PwVS8/9xVxwSkwNakSi4qK4qS3JQfcwyX3nemVITLvpuNl80CWDS6D8xS41syv964aJV1cx3Me48
+                        rxT8IX8ppW9/WLUUgZ6Waa0ry4TcJ4pGK4WNnWtnDEezjvMxS0pgbXdLoKvWNed1PkIltjgW5RJ6
+                        tWvzi8z5eruGmRon9Xoy4xI3mK9HJaqELGoLi7UeglYumyWNquDAgf/WjXU7eIYru9PV9XYc4Sv6
+                        zokYspdmoYo20hBYnVPffpYSXqsn8He6eQQ3C1Lh1ljeqU7rRKyy1GRUmiGFBKrUprjD8GhvQxaP
+                        z5FaEKbokJa43BF1H7pkgSo+DYrDntiN
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                     Location="http://cato1027-Elb-1TETW1H8WLIPQ-1231250788.us-east-1.elb.amazonaws.com.elb.cloudbees.net/cjoc/securityRealm/finishLogin"
+                                     index="0"/>
+    </md:SPSSODescriptor>
 </md:EntityDescriptor>

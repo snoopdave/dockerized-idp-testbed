@@ -16,8 +16,8 @@
     <!-- Release some attributes to an SP. -->
     <AttributeFilterPolicy id="example1">
         <PolicyRequirementRule xsi:type="OR">
-            <Rule xsi:type="Requester" value="https://sp.idptestbed/shibboleth" />
-            <Rule xsi:type="Requester" value="http://idptestbed/sp/simplesamlphp" />
+            <Rule xsi:type="Requester" value="http://dev.snoopdave.net/cjoc/securityRealm/finishLogin" />
+            <Rule xsi:type="Requester" value="http://cato1027-Elb-1TETW1H8WLIPQ-1231250788.us-east-1.elb.amazonaws.com.elb.cloudbees.net/cjoc/securityRealm/finishLogin" />
         </PolicyRequirementRule>
 
         <AttributeRule attributeID="eduPersonPrincipalName">
@@ -40,7 +40,7 @@
             <PermitValueRule xsi:type="ANY" />
         </AttributeRule>
 
-        <AttributeRule attributeID="eduPersonPrincipalName">
+        <AttributeRule attributeID="memberOf">
             <PermitValueRule xsi:type="ANY" />
         </AttributeRule>
 
