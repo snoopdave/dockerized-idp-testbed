@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<md:EntityDescriptor ID="_df8rt8jqi4zbctech8gn32mwjx4cqp6wzjh8jsi" entityID="https://dev.snoopdave.net/cjoc/securityRealm/finishLogin" validUntil="2037-11-29T19:22:30.820Z" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"><md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/><alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/></md:Extensions><md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.0:protocol urn:oasis:names:tc:SAML:1.1:protocol"><md:Extensions xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"><init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://dev.snoopdave.net/cjoc/securityRealm/finishLogin"/></md:Extensions><md:KeyDescriptor use="signing"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC+TCCAeGgAwIBAgIUV+9Jr86A2DKxBY2a6XIyZQm4XAkwDQYJKoZIhvcNAQELBQAwFzEVMBMG
-    A1UEAwwMU0FNTC1qZW5raW5zMB4XDTE3MTEyOTE5MjIzMFoXDTE3MTEzMDE5MjIzMFowFzEVMBMG
-    A1UEAwwMU0FNTC1qZW5raW5zMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsxF9ATdj
-    /qK6KZI1bWMscyi1kT8ZbRbz2ZbH7eHApf4uxxSzv7MD+30Gc090kHgOv0lKrJHiJuBEyvyGeWBr
-    8CQqXkEY1NlsH+jkc7OpaTXK0DWjppkoyJoDfoQfaj0DbyTx0tY5kwu7A+b6+6F9AnNrC5S1f0fj
-    tBC9CqjaG8twBE4Hv0D6X5X0lFmjRjKm2qgwecMVaJC6Y89eg8kiO5y9Kv2H1N1Hvu/ZZbeBAy06
-    BKcg9B6F56OetQhgNGmLNX2C430D0NCymkZUWxm71VlOkhfJbA1oTtOHHy/y3YjjzTi/kr6jdW9g
-    1rLQpU2NOcWvDrkTnJ0o4WIV9jiPKQIDAQABoz0wOzAdBgNVHQ4EFgQU8T7xoVmW75751MDfU3YO
-    VbyIoxAwGgYDVR0RBBMwEYIPY249U0FNTC1qZW5raW5zMA0GCSqGSIb3DQEBCwUAA4IBAQCGSXad
-    Hx+GH/3f22phUbWcTXpzL9t4RszAknTdT3vfta1jM540A/a9Pi7AFZodnSlMsqEaI7OSKq6RN6XH
-    gbH2dQuaeU9jD1bre3sUKaPSYdD31G9k5lCZp/BWAjNAVlsE9iINIOVTdqnuEOxXHJzNw8x8cMfa
-    LNHR6ccT1spGUnTVarFJ+yLfCoYFTy1WqhJfP5dDuKSxBk0Qw6vbbhfHnrzHS2kKO1uRCrTw5/x4
-    Wu53jsOibb09CI2s07ITTGWtqTU1awfAVDMrSennI3Q4O5JFsV7QJFJIkjbphSBM3vD9amCGmIj9
-    YZrDOMIKfbZOFy5dORR6XeOtbJrXjSia</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:KeyDescriptor use="encryption"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC+TCCAeGgAwIBAgIUV+9Jr86A2DKxBY2a6XIyZQm4XAkwDQYJKoZIhvcNAQELBQAwFzEVMBMG
-    A1UEAwwMU0FNTC1qZW5raW5zMB4XDTE3MTEyOTE5MjIzMFoXDTE3MTEzMDE5MjIzMFowFzEVMBMG
-    A1UEAwwMU0FNTC1qZW5raW5zMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsxF9ATdj
-    /qK6KZI1bWMscyi1kT8ZbRbz2ZbH7eHApf4uxxSzv7MD+30Gc090kHgOv0lKrJHiJuBEyvyGeWBr
-    8CQqXkEY1NlsH+jkc7OpaTXK0DWjppkoyJoDfoQfaj0DbyTx0tY5kwu7A+b6+6F9AnNrC5S1f0fj
-    tBC9CqjaG8twBE4Hv0D6X5X0lFmjRjKm2qgwecMVaJC6Y89eg8kiO5y9Kv2H1N1Hvu/ZZbeBAy06
-    BKcg9B6F56OetQhgNGmLNX2C430D0NCymkZUWxm71VlOkhfJbA1oTtOHHy/y3YjjzTi/kr6jdW9g
-    1rLQpU2NOcWvDrkTnJ0o4WIV9jiPKQIDAQABoz0wOzAdBgNVHQ4EFgQU8T7xoVmW75751MDfU3YO
-    VbyIoxAwGgYDVR0RBBMwEYIPY249U0FNTC1qZW5raW5zMA0GCSqGSIb3DQEBCwUAA4IBAQCGSXad
-    Hx+GH/3f22phUbWcTXpzL9t4RszAknTdT3vfta1jM540A/a9Pi7AFZodnSlMsqEaI7OSKq6RN6XH
-    gbH2dQuaeU9jD1bre3sUKaPSYdD31G9k5lCZp/BWAjNAVlsE9iINIOVTdqnuEOxXHJzNw8x8cMfa
-    LNHR6ccT1spGUnTVarFJ+yLfCoYFTy1WqhJfP5dDuKSxBk0Qw6vbbhfHnrzHS2kKO1uRCrTw5/x4
-    Wu53jsOibb09CI2s07ITTGWtqTU1awfAVDMrSennI3Q4O5JFsV7QJFJIkjbphSBM3vD9amCGmIj9
-    YZrDOMIKfbZOFy5dORR6XeOtbJrXjSia</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dev.snoopdave.net/cjoc/securityRealm/finishLogin" index="0"/></md:SPSSODescriptor></md:EntityDescriptor>
+<md:EntityDescriptor ID="_ef7niw6bbjjph5zorulbfqnzzr7sys2ecxhigzv" entityID="https://dev.snoopdave.net/cjoc/securityRealm/finishLogin" validUntil="2037-11-30T15:39:28.440Z" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"><md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport"><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/><alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/></md:Extensions><md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.0:protocol urn:oasis:names:tc:SAML:1.1:protocol"><md:Extensions xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"><init:RequestInitiator Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://dev.snoopdave.net/cjoc/securityRealm/finishLogin"/></md:Extensions><md:KeyDescriptor use="signing"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC+TCCAeGgAwIBAgIUc6N6GX/k4ktKWRe/j8xvYgwmqpUwDQYJKoZIhvcNAQELBQAwFzEVMBMG
+    A1UEAwwMU0FNTC1qZW5raW5zMB4XDTE3MTEzMDE1MzkyOFoXDTE3MTIwMTE1MzkyOFowFzEVMBMG
+    A1UEAwwMU0FNTC1qZW5raW5zMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx42X5hjh
+    E/LRAu5M0CXjhWX1YsW71AsrueQ6rsHYmhZSLKJJTl1/aFUxN9dre/a92Jb8Xz83TAJr/5Caf3lc
+    5g0bWZthHI71dPx/6lcZuZwq5E8Hy1rXdvUKegG/AIxEp8blL3vvK+Dsks0XHYEE14BCYCApJ+vj
+    XNF2OqqYh0YjlntLqxjOTBRqqME0okkE9B/yVY2dBpNOo85WRGOveIiwLabID6eMgtUy9oLrIkA1
+    htnvizlruBK995NnW/gP6Lf10DC/+TTfTnAhBv/Uas0PBYswBIDUSs6zsK751Ggm/kI/MN796kvj
+    A07abYdpqcqAilWj1EprE91CyBw4WQIDAQABoz0wOzAdBgNVHQ4EFgQUQh5YvLMVzbn6N2TjiCnI
+    kmrEV8gwGgYDVR0RBBMwEYIPY249U0FNTC1qZW5raW5zMA0GCSqGSIb3DQEBCwUAA4IBAQCJQvRL
+    Mlql3G+1Dmo91MRpTLX1SJZifysU507hMKmZ0tZoc7UkejKpHazJmVkTfrbT1uOoBxEFHPVfjiA1
+    NHajXKnC4RkeATBzQy0fCKe58mT6fiMzzY/u1LigbqiNioZqDeVtCgTSn0TF/Y4W5SglnniMbxME
+    AMLHLIacNAEqc/RN4M81fvycOvP8XIEEB3JGcEHd7Bppfr7shZDweakubge0mto3j7zjomjOlycm
+    xC3Rztewf6V1OSlJwHZyu+5ZCTIAdye4aHAGI2T6zd/tXTMaFhLGfg9Tn3dprgjFpVrqn0oj7b7J
+    KYR3YUuOh8tOfl3F+llo+OLapXHf3y3j</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:KeyDescriptor use="encryption"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC+TCCAeGgAwIBAgIUc6N6GX/k4ktKWRe/j8xvYgwmqpUwDQYJKoZIhvcNAQELBQAwFzEVMBMG
+    A1UEAwwMU0FNTC1qZW5raW5zMB4XDTE3MTEzMDE1MzkyOFoXDTE3MTIwMTE1MzkyOFowFzEVMBMG
+    A1UEAwwMU0FNTC1qZW5raW5zMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx42X5hjh
+    E/LRAu5M0CXjhWX1YsW71AsrueQ6rsHYmhZSLKJJTl1/aFUxN9dre/a92Jb8Xz83TAJr/5Caf3lc
+    5g0bWZthHI71dPx/6lcZuZwq5E8Hy1rXdvUKegG/AIxEp8blL3vvK+Dsks0XHYEE14BCYCApJ+vj
+    XNF2OqqYh0YjlntLqxjOTBRqqME0okkE9B/yVY2dBpNOo85WRGOveIiwLabID6eMgtUy9oLrIkA1
+    htnvizlruBK995NnW/gP6Lf10DC/+TTfTnAhBv/Uas0PBYswBIDUSs6zsK751Ggm/kI/MN796kvj
+    A07abYdpqcqAilWj1EprE91CyBw4WQIDAQABoz0wOzAdBgNVHQ4EFgQUQh5YvLMVzbn6N2TjiCnI
+    kmrEV8gwGgYDVR0RBBMwEYIPY249U0FNTC1qZW5raW5zMA0GCSqGSIb3DQEBCwUAA4IBAQCJQvRL
+    Mlql3G+1Dmo91MRpTLX1SJZifysU507hMKmZ0tZoc7UkejKpHazJmVkTfrbT1uOoBxEFHPVfjiA1
+    NHajXKnC4RkeATBzQy0fCKe58mT6fiMzzY/u1LigbqiNioZqDeVtCgTSn0TF/Y4W5SglnniMbxME
+    AMLHLIacNAEqc/RN4M81fvycOvP8XIEEB3JGcEHd7Bppfr7shZDweakubge0mto3j7zjomjOlycm
+    xC3Rztewf6V1OSlJwHZyu+5ZCTIAdye4aHAGI2T6zd/tXTMaFhLGfg9Tn3dprgjFpVrqn0oj7b7J
+    KYR3YUuOh8tOfl3F+llo+OLapXHf3y3j</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dev.snoopdave.net/cjoc/securityRealm/finishLogin" index="0"/></md:SPSSODescriptor></md:EntityDescriptor>
